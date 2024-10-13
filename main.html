@@ -10,34 +10,44 @@
 	<!-- the entire body must be written by student -->
     <form method="post">
 		<label for="name">Name</label>
-		<input type="Text" required id="gender" placeholder="Name">
+		<input name="name" type="Text" required id="gender" placeholder="Name">
 
 		<label for="email">Email</label>
-		<input type="Email" required id="email" placeholder="Email">
+		<input name="email" type="Email" required id="email" placeholder="Email">
 
 
-	   <label for="Gender">Gender</label>
-		<input type="Radio" name="name" required id="gender_m, gender_f" >
+	   <label for="Gender">
+		<input type="Radio" name="gender" required id="gender_m ">
+</label>
+		<label>
+	 <input type="Radio" name="gender" required id="gender_f" >
+			</label>
 
+		
        <label for="cars">Car Brands</label>
-		<input type="Select" required id="cars" placeholder="--Please choose an option--">
+		<select required id="cars">
+			<option value="" disabled selected></option>
+		<option value="benz">benz</option>
+			<option value="benz1">benz1</option>
+			<option value="benz3">benz3</option>
+		</select> 
 
 		<label for="age">Age</label>
-		<input type="Number" required id="age" placeholder="Age">
+		<input name="age" type="Number" required id="age" placeholder="Age">
 
 		<label for="dob">DOB</label>
-		<input type="Date" required id="dob" >
+		<input name="dob" type="Date" required id="dob" >
 
 		<label for="tel">Phone Number</label>
-		<input type="Tel"  id="tel" placeholder="xxx-xxx-xxxx">
+		<input name="tel name=" type="Tel"  id="tel" placeholder="xxx-xxx-xxxx">
 
 		<label for="password">Password</label>
-		<input type="Password" required id="password" placeholder="Password">
+		<input name="password" type="Password" required id="password" placeholder="Password">
 
 		<label for="tos">I agree to the TOS</label>
-		<input type="Checkbox"  required id="tos">
+		<input  name="tos" type="Checkbox"  required id="tos">
 
-		<button>submit</button>
+		<button type="submit">submit</button>
 	</form>
 	<script type="text/javascript" src="./script.js">
 </script>
